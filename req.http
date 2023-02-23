@@ -1,7 +1,89 @@
-GET http://localhost:3000/cc/hp_123
+GET http://localhost:3000/details/cc/nagasai_nithin
 
 ###
-GET http://localhost:3000/lc/l0kxh
+GET http://localhost:3000/details/lc/nagasainithin37
 
 ###
-GET http://localhost:3000/cf/nagasainithin37
+GET http://localhost:3000/details/cf/nagasainithin37
+
+###
+GET http://localhost:3000/details/spoj/k_hari108
+
+
+
+
+###
+POST http://localhost:3000/users/createuser
+Content-Type: application/json
+
+{
+    "username":"samhith",
+    "password":"samhith"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username":"samhith",
+    "password":"samhith"
+}
+
+
+###
+POST http://localhost:3000/profile/createDetails
+Content-Type: application/json
+
+{
+    "username":"samhith",
+    "lc_username":"samhith_kosana",
+    "cc_username":"samhith0101x",
+    "cf_username":"samhith_kosana",
+    "spoj_username":"samhith_kosana"
+}
+
+###
+GET http://localhost:3000/profile/getdetails/hariprasad
+
+###
+PUT http://localhost:3000/profile/updatedetails
+Content-Type: application/json
+
+{
+    "username": "hariprasad",
+    "lc": {
+      "username": "hari1018",
+      "rating": "1,581",
+      "noOfProblemsSolved": "73",
+      "noOfEasyProblems": "45",
+      "noOfMediumProblems": "25",
+      "noOfHardProblems": "3",
+      "badges": "0",
+      "rank": "747,664",
+      "noOfContests": "10"
+    },
+    "lcScore": 6282,
+    "cc": {
+      "rating": "1380",
+      "name": "Hariprasad Katakam",
+      "GlobalRank": "69513",
+      "CountryRank": "64294",
+      "noOfProblemsSolved": "152",
+      "noOfContests": "12"
+    },
+    "ccScore": 1733,
+    "cf": {
+      "username": "hari_108",
+      "rating": "647",
+      "noOfProblemsSolved": "97",
+      "noOfContests": 2
+    },
+    "cfScore": 970,
+    "spoj": {
+      "username": "k_hari108",
+    "noOfProblemsSolved": 46,
+    "GlobalRank": 50401
+    },
+    "score": 8985
+}
